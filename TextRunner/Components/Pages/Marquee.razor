@@ -1,0 +1,11 @@
+﻿@rendermode InteractiveServer
+@inject IJSRuntime JS
+
+<div class="runline">
+    <span>@Text</span>
+</div>
+
+@code {
+    [Parameter]
+    public string Text { get; set; } = "Добро пожаловать в TextRunner! 🚀";
+}

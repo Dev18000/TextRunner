@@ -1,0 +1,30 @@
+﻿.runline {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: gray;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+    .runline > span {
+        display: inline-block;
+        white-space: nowrap;
+        animation: runline 20s linear infinite;
+    }
+
+    .runline:hover > span {
+        animation-play-state: paused;
+    }
+
+@keyframes runline {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
